@@ -142,7 +142,7 @@ animations = [{
 radius = 5.0
 height = 10.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_dovo2")
 move_speed = 60.0
 
@@ -153,3 +153,6 @@ animation = &"move_down"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("CapsuleShape2D_hbghi")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
