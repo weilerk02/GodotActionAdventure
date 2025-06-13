@@ -145,7 +145,7 @@ height = 10.0
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_dovo2")
 move_speed = 60.0
-push_strength = 100.0
+push_strength = 300.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lgqa7")
