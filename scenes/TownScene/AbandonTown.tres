@@ -1,6 +1,9 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://ba0k625xpbaj"]
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://ba0k625xpbaj"]
 
 [ext_resource type="Texture2D" uid="uid://blwel22bwm7so" path="res://Ninja Adventure - Asset Pack/Backgrounds/Tilesets/TilesetVillageAbandoned.png" id="1_cfe2x"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_cfe2x"]
+tile_data = PackedInt32Array(65536, 0, 9, 196608, 0, 9, 327680, 0, 9, 458752, 0, 9, 589824, 0, 9, 3, 0, 9, 131075, 0, 9, 262147, 0, 9, 393219, 0, 9, 524291, 0, 9, 655363, 0, 9, 65542, 0, 9, 196614, 0, 9, 327686, 0, 9, 458758, 0, 9, 589830, 0, 9, 9, 0, 9, 131081, 0, 9, 262153, 0, 9, 393225, 0, 9, 524297, 0, 9, 655369, 0, 9, 65548, 0, 9, 196620, 0, 9, 327692, 0, 9, 458764, 0, 9, 589836, 0, 9, 131087, 0, 9, 262159, 0, 9, 393231, 0, 9, 524303, 0, 9, 655375, 0, 9, 65554, 0, 9, 196626, 0, 9, 327698, 0, 9, 458770, 0, 9, 589842, 0, 9, 131093, 0, 9, 262165, 0, 9, 393237, 0, 9, 524309, 0, 9, 655381, 0, 9)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcvv7"]
 texture = ExtResource("1_cfe2x")
@@ -22,8 +25,10 @@ texture = ExtResource("1_cfe2x")
 16:5/0 = 0
 12:6/size_in_atlas = Vector2i(4, 5)
 12:6/0 = 0
+12:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-27.2486, 36.6912, -17.5362, 36.1516, -16.0974, 22.6622, -0.449646, 20.6838, 2.78781, 36.3315, 22.932, 36.871, 26.1694, 36.871, 26.8889, 22.3025, 26.3493, -2.33816, -27.0687, -0.719437)
 11:3/size_in_atlas = Vector2i(3, 3)
 11:3/0 = 0
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-22.0327, 21.9428, -10.162, 20.5039, -9.98216, 6.83463, 10.8815, 5.93534, 9.62244, 21.2233, 20.5938, 20.324, 21.8528, -5.03604, -19.6945, -3.95689)
 0:3/size_in_atlas = Vector2i(2, 2)
 0:3/0 = 0
 0:5/0 = 0
@@ -40,8 +45,12 @@ texture = ExtResource("1_cfe2x")
 4:6/0 = 0
 0:6/size_in_atlas = Vector2i(4, 3)
 0:6/0 = 0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-30.3062, 0.719437, -26.5292, 19.065, 25.8097, 18.8852, 29.7666, 0.179859)
 0:9/size_in_atlas = Vector2i(4, 3)
 0:9/0 = 0
+0:9/0/y_sort_origin = 18
+0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-31.9249, 1.25901, -25.8097, 18.5255, 26.3493, 19.2449, 30.3062, 0.179859)
+0:9/0/physics_layer_0/polygon_1/points = PackedVector2Array(-30.1263, 0.539577, -15.3779, -5.57562, -12.3203, -12.2304, 9.62244, -13.4894, 11.7807, -7.91378, 27.0687, -0.359716)
 4:9/size_in_atlas = Vector2i(2, 2)
 4:9/0 = 0
 4:11/0 = 0
@@ -101,4 +110,6 @@ texture = ExtResource("1_cfe2x")
 19:10/0 = 0
 
 [resource]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fcvv7")
+pattern_0 = SubResource("TileMapPattern_cfe2x")
