@@ -192,6 +192,7 @@ tile_map_data = PackedByteArray("AAD6////AQACAAAAAADy//z/AQAAAAIAAAD0//7/AQAAAAI
 tile_set = SubResource("TileSet_ducuf")
 
 [node name="Player" parent="ObstacleLayer" instance=ExtResource("1_pwder")]
+push_strength = 10.0
 
 [node name="SceneEntrance" parent="." instance=ExtResource("6_j8flk")]
 position = Vector2(216, 35)
